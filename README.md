@@ -8,8 +8,6 @@ Composer 2.x
 
 MySQL ou PostgreSQL (ou outro banco de dados de sua escolha)
 
-Node.js (para compilar assets, se necessário)
-
 Instalação
 1. Clonando o Repositório
 Primeiro, clone o repositório para o seu ambiente local:
