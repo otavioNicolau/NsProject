@@ -15,6 +15,7 @@
         @foreach ($projects as $project)
 
         @include('projects.edit', ['project' => $project])
+        @include('projects.destroy', ['project' => $project])
 
         <div class="col-md-4 mb-4">
             <div class="card shadow-sm border-0 h-100">
@@ -29,12 +30,10 @@
                             <button class="btn btn-sm bg-transparent border-0 text-secondary" title="Editar Projeto" data-bs-toggle="modal" data-bs-target="#editProjectModal-{{ $project->id }}">
                                 <i class="bi bi-pencil-fill fs-5"></i>
                             </button>
-                            <form action="{{ route('projects.destroy', $project) }}" method="POST" class="m-0 p-0">
-                                @csrf @method('DELETE')
-                                <button class="btn btn-sm bg-transparent border-0 text-danger" onclick="return confirm('Excluir projeto?')" title="Excluir Projeto">
+
+                            <button type="button" class="btn btn-sm bg-transparent border-0 text-danger" data-bs-toggle="modal" data-bs-target="#deleteProjectModal-{{ $project->id }}" title="Excluir Projeto">
                                     <i class="bi bi-trash-fill fs-5"></i>
-                                </button>
-                            </form>
+                            </button>
                         </div>
                     </div>
                     @include('tasks.index', ['project' => $project])
