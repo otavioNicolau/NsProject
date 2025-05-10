@@ -1,4 +1,4 @@
-# Projeto Laravel 12+
+# NSProject
 
 Este projeto é uma aplicação web desenvolvida com Laravel 12+ para gerenciar projetos e tarefas. Ele inclui funcionalidades como autenticação, CRUD de projetos e tarefas, e exibição de mensagens de erro e sucesso como *toasts* flutuantes.
 
