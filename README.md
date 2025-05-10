@@ -73,3 +73,16 @@ php artisan serve
 ```
 
 Acesse: [http://localhost:8000](http://localhost:8000)
+
+
+## ▶️ Faça Login
+
+
+Email
+```bash
+user@teste.com.br
+```
+Password
+```bash
+123456
+```
